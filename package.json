@@ -1,12 +1,12 @@
 {
   "name": "@hotelflex/koa-policy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src",
   "scripts": {
     "precommit": "pretty-quick --staged"
   },
   "dependencies": {
-    "@hotelflex/policy": "git+ssh://git@github.com/hotelflex/policy.git#1.0.0",
+    "@hotelflex/policy": "git+https://github.com/hotelflex/policy.git#1.0.0",
     "boom": "^7.2.0"
   },
   "devDependencies": {
