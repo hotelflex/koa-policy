@@ -5,7 +5,7 @@ module.exports = () => async (ctx, next) => {
   try {
     await next()
   } catch (err) {
-    if (err instanceof Policy.Errors.Unauthorized) {
+    if (err instanceof Policy.Error) {
       if (!ctx.request.session.id) {
         throw Boom.unauthorized()
       } else {
